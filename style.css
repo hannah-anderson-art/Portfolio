@@ -27,14 +27,19 @@ h2 {
 }
 
 nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    padding-top: 75px;
-    margin-right: 100px;
-    margin-left: 75px;
+    /* padding: 25px; */
+    margin: 25px;
 }
+
+.navbar-custom {
+    background-color: transparent !important; /* Removes the background color */
+    /* Ensure navigation links are visible */
+    color: black !important; /* Change color as needed */
+  }
+  /* Adjust navbar link colors */
+  .navbar-custom .navbar-nav .nav-link {
+    color: black !important; /* Change color as needed */
+  }
 
 #nav-links {
     display: flex;
@@ -885,5 +890,47 @@ table {
         .left-paragraph {
             margin-right: 0;
             padding-bottom: 50px;
+        }
+    }
+
+    /* IPHONE */
+    @media (max-width: 375px) {
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        
+            padding-top: 0px;
+            margin-right: 0px;
+            margin-left: 0px;
+        }
+
+        .floating-icon {
+            transform: scale(0.1);
+            opacity: 0;
+        }
+
+        .expanding-box {
+            width: 25px;
+            height: 75px;
+            background-color: #10767C;
+            overflow: hidden;
+        }
+
+        .expanding-box:hover {
+            width: 25px;
+            height: 75px;
+            background-color: #10767C;
+        }
+
+        .expanding-box-2:hover {
+            width: 25px;
+            height: 75px;
+            opacity: 0;
+        }
+
+        #logo-hover-group {
+            transform: scale(0.75);
+            /* transform: translateX(-100); */
         }
     }

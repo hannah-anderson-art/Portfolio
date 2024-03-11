@@ -22,17 +22,31 @@
 <body>
 
   <div class="background-image" style="background-image: url('images/childrens-book/spread22-23_0.25opacity.png'); background-size: cover; background-repeat: no-repeat; background-position: center; padding-bottom: 0;">
-    <nav class="my-custom-class">
-      <a href="index.html" id="logo-hover-group">
-        <div class="expanding-box" id="expanding-box"></div>
-        <div class="content">
-          <img src="images/HANNAH ANDERSON_black.png" height="75px">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-custom">
+      <div class="container-fluid m-0">
+        <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+        <div class="parent-object" id="logo-hover-group">
+          <div class="expanding-box" id="expanding-box">
+            <!-- "it's me!" FLOATING ICON -->
+            <div id="floatingIcon" class="floating-icon">
+              <img src="images/its-me.png" width="150px" alt="Floating Icon">
+            </div>  
+          </div>
+          <div class="content">
+            <img src="images/HANNAH ANDERSON_black.png" height="75px">
+          </div>
         </div>
-      </a>
-      <div id="nav-links">
-          <a href="index.html" class="nav-link">Home</a>
-          <a href="about.html" class="nav-link">About</a>
-          <a href="contact.html" class="nav-link">Contact</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link" href="#">Features</a>
+            <a class="nav-link" href="#">Pricing</a>
+            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+          </div>
+        </div>
       </div>
     </nav>
     <div class="container text-center introduction" style="width: 50%;">
