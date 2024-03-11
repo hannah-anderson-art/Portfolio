@@ -80,10 +80,12 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 // The script can be placed directly in your HTML or in a separate .js file
-window.onload = function() {
-    var expandingBox = document.getElementById('expanding-box');
-    var floatingIcon = document.getElementById('floatingIcon');
+var expandingBox = document.getElementById('expanding-box');
+var floatingIcon = document.getElementById('floatingIcon');
 
+window.onload = function() {
+
+    // Check if the viewport is wider than 1024px
     if (window.matchMedia("(min-width: 1024px)").matches) {
         floatingIcon.style.opacity = '1'; 
 
@@ -95,21 +97,4 @@ window.onload = function() {
     else {
         floatingIcon.style.opacity = '0';
     }
-
-    // floatingIcon.style.opacity = '1';
-    
-    // // Add event listener for mouseover (hover)
-    // expandingBox.addEventListener('mouseover', function() {
-    //     floatingIcon.style.opacity = '0.5'; // Set lower opacity
-    // });
-    
-    // Add event listener for mouseout
-    // expandingBox.addEventListener('mouseover', function() {
-    //     floatingIcon.style.opacity = '0'; // Reset to full opacity
-    // });
-    
-    // setTimeout(function() {
-    //   floatingIcon.style.opacity = '0';
-    // }, 5000); // The icon will disappear after 5 seconds
-  };
-  
+};

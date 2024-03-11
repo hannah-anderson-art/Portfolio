@@ -122,7 +122,7 @@ h2 {
         /* z-index: 9999; */
         top: 100px;
         left: 0;
-        opacity: 0;
+        opacity: 1;
         transition: opacity 1s;
         /* width: 50px; */
       }
@@ -901,11 +901,16 @@ table {
             margin-right: 0px;
             margin-left: 0px;
         }
-
- 
+        
         .floating-icon {
-            scale: 0;
-        }
+            position: absolute;
+            /* z-index: 9999; */
+            top: 100px;
+            left: 0;
+            opacity: 0;
+            transition: opacity 1s;
+            /* width: 50px; */
+          }
 
         .expanding-box {
             width: 25px;
