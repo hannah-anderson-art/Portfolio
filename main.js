@@ -84,7 +84,7 @@ window.onload = function() {
     var expandingBox = document.getElementById('expanding-box');
     var floatingIcon = document.getElementById('floatingIcon');
 
-    if (window.matchMedia("(min-width: 1366px)").matches) {
+    if (window.matchMedia("(min-width: 10241366px)").matches) {
         floatingIcon.style.opacity = '1'; 
 
         expandingBox.addEventListener('mouseover', function() {
