@@ -83,7 +83,20 @@ document.addEventListener('DOMContentLoaded', function () {
 window.onload = function() {
     var expandingBox = document.getElementById('expanding-box');
     var floatingIcon = document.getElementById('floatingIcon');
-    floatingIcon.style.opacity = '1';
+
+    if (window.matchMedia("(min-width: 1366px)").matches) {
+        floatingIcon.style.opacity = '1'; 
+
+        expandingBox.addEventListener('mouseover', function() {
+            floatingIcon.style.opacity = '0'; // Reset to full opacity
+        });
+    }
+
+    else {
+        floatingIcon.style.opacity = '0';
+    }
+
+    // floatingIcon.style.opacity = '1';
     
     // // Add event listener for mouseover (hover)
     // expandingBox.addEventListener('mouseover', function() {
@@ -91,12 +104,12 @@ window.onload = function() {
     // });
     
     // Add event listener for mouseout
-    expandingBox.addEventListener('mouseover', function() {
-        floatingIcon.style.opacity = '0'; // Reset to full opacity
-    });
+    // expandingBox.addEventListener('mouseover', function() {
+    //     floatingIcon.style.opacity = '0'; // Reset to full opacity
+    // });
     
     // setTimeout(function() {
     //   floatingIcon.style.opacity = '0';
     // }, 5000); // The icon will disappear after 5 seconds
   };
-
+  
