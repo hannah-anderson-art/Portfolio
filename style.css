@@ -23,11 +23,8 @@ p {
 h2 {
     font-family: "futura-pt", sans-serif;
     font-weight: 700;
-    font-size: 30px;
-}
-
-nav {
-    /* padding: 25px; */
+    display: flex;
+     /* padding: 25px; */
     margin: 25px;
 }
 
@@ -894,7 +891,7 @@ table {
     }
 
     /* IPHONE */
-    @media (max-width: 375px) {
+    @media (max-width: 1366px) {
         nav {
             display: flex;
             justify-content: space-between;
@@ -905,9 +902,9 @@ table {
             margin-left: 0px;
         }
 
+ 
         .floating-icon {
-            transform: scale(0.1);
-            opacity: 0;
+            scale: 0;
         }
 
         .expanding-box {
@@ -915,22 +912,28 @@ table {
             height: 75px;
             background-color: #10767C;
             overflow: hidden;
-        }
+            transition: width 0.3s ease, background-image 0.3s ease;
+    }
 
         .expanding-box:hover {
             width: 25px;
-            height: 75px;
-            background-color: #10767C;
+            opacity: 1;
+            background-image: none;
+            background-size: 100%;
+            background-repeat: no-repeat;
         }
 
         .expanding-box-2:hover {
             width: 25px;
-            height: 75px;
-            opacity: 0;
+            opacity: 1;
+            background-image: none;
+            background-size: 100%;
+            background-repeat: no-repeat;
         }
 
         #logo-hover-group {
             transform: scale(0.75);
             /* transform: translateX(-100); */
+
         }
     }
