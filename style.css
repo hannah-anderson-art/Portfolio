@@ -159,9 +159,9 @@ nav {
 }
 
 .card-item {
-    margin: 10px;
+    /* margin: 10px; */
     background-color: white;
-    width: 250px;
+    /* width: 250px; */
     /* height: 350px; */
     text-decoration: none;
     color: black;
@@ -197,7 +197,6 @@ nav {
 
 .card-caption {
     padding: 25px;
-
     /* background-color: #10767C; */
 }
 
@@ -1002,5 +1001,48 @@ table {
         
             font-size: 16px;
             margin: 0;
+        }
+    }
+
+    @media (max-width: 1024px) {
+        .card-item h2 {
+            /* font-family: "quicksand", sans-serif;
+            font-weight: 700;
+            font-style: normal; */
+            font-size: 15px;
+            margin-bottom: 3px;
+        
+            font-family: "futura-pt", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+        
+        .sub-header {
+            color: #aeaeae;
+            font-family: "futura-pt", sans-serif;
+            font-size: 12px;
+        }
+        
+        .card-item h3 {
+            /* font-family: "quicksand", sans-serif;
+            font-weight: 400;
+            font-style: normal; */
+        
+            font-family: "futura-pt", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        
+            font-size: 12px;
+            margin: 0;
+        }
+
+        .card-item {
+            width: 150px;
+        }
+
+        #card-container {
+            /* background-color: #10767C; */
+            margin-bottom: 200px;
+            margin-top: 75px;
         }
     }
