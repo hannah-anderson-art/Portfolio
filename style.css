@@ -23,9 +23,10 @@ p {
 h2 {
     font-family: "futura-pt", sans-serif;
     font-weight: 700;
-    display: flex;
-     /* padding: 25px; */
-    margin: 25px;
+}
+
+nav {
+    margin: 50px;
 }
 
 .navbar-custom {
@@ -152,7 +153,7 @@ h2 {
     margin-bottom: 200px;
     margin-top: 150px;
     color: black;
-    width: 1200px;
+    /* width: 1200px; */
     text-align: center;
 }
 
@@ -897,9 +898,8 @@ table {
             justify-content: space-between;
             align-items: center;
         
-            padding-top: 0px;
-            margin-right: 0px;
-            margin-left: 0px;
+            /* padding-top: 0px; */
+            margin: 10px;
         }
         
         .floating-icon {
@@ -940,5 +940,66 @@ table {
             transform: scale(0.75);
             /* transform: translateX(-100); */
 
+        }
+
+        /* CARD CONTAINER */
+        /* #card-container {
+            width: 900px;
+        } */
+
+        .card-item {
+            /* margin: 10px; */
+            background-color: white;
+            width: 200px;
+            /* height: 350px; */
+            text-decoration: none;
+            color: black;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            /* box-sizing: border-box; */
+        
+            /* display: inline-block; Change display to inline-block to ensure cards align horizontally */
+            transition: transform 0.3s ease;
+        }
+        
+        .card-item img {
+            filter: grayscale(100%);
+            transition: filter 0.3s ease; 
+        }
+        
+        .card-item h2 {
+            /* font-family: "quicksand", sans-serif;
+            font-weight: 700;
+            font-style: normal; */
+            font-size: 20px;
+            margin-bottom: 3px;
+        
+            font-family: "futura-pt", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+        
+        .sub-header {
+            color: #aeaeae;
+            font-family: "futura-pt", sans-serif;
+            font-size: 15px;
+        }
+        
+        .card-caption {
+            padding: 25px;
+        
+            /* background-color: #10767C; */
+        }
+        
+        .card-item h3 {
+            /* font-family: "quicksand", sans-serif;
+            font-weight: 400;
+            font-style: normal; */
+        
+            font-family: "futura-pt", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        
+            font-size: 16px;
+            margin: 0;
         }
     }
