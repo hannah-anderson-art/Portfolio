@@ -434,6 +434,10 @@ h1 {
     /* background-color: blue; */
   }
 
+  .gap-badge {
+    width: 100%;
+}
+
   #skill-icons h2 {
     /* background-color: #10767C; */
     margin-top: 25px;
@@ -899,7 +903,7 @@ table {
             padding-bottom: 50px;
         }
 
-        .badge {
+        .gap-badge {
             width: 75%;
         }
 
