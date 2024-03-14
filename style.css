@@ -631,6 +631,10 @@ h1 {
     margin-bottom: 50px;
 }
 
+.carousel-control-prev, .carousel-control-next {
+    transform: scale(0.5); /* Adjust the scale as needed */
+}
+
 .user-persona img {
     margin-bottom: 50px;
 }
@@ -893,6 +897,10 @@ table {
         .introduction h1 {
             font-size: 25px;
             padding-bottom: 50px;
+        }
+
+        .badge {
+            width: 75%;
         }
 
         .introduction p {
