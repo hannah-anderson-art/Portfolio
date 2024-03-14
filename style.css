@@ -83,22 +83,6 @@ nav {
         padding-top: 50px;
     }
 
-    .left-paragraph {
-        margin-right: 100px;
-    }
-
-    .left-paragraph h2 {
-        margin-bottom: 50px;
-    }
-
-    .right-paragraph {
-        margin-left: 100px;
-    }
-
-    .right-paragraph h2 {
-        margin-bottom: 50px;
-    }
-
     .expanding-box:hover {
         width: 75px;
         opacity: 1;
@@ -958,6 +942,10 @@ table {
         .data-circle {
             width: 75px;
         }
+
+        .box1 { order: 2; }
+        .box2 { order: 1; }
+        .box3 { order: 3; }
 
         .floating-icon {
             position: absolute;
