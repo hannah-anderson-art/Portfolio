@@ -137,7 +137,6 @@ nav {
         width: 100px;
         height: auto;
       } */
-
       
 .center-div {
     /* background-color: orange; */
@@ -229,12 +228,16 @@ nav {
     /* margin-top: 150px; */
     /* color: white; */
 
-    margin: 75px;
+    margin-top: 75px;
 
-    width: 1000px;
+    /* width: 1000px; */
     /* text-align: center; */
 
     background-color: black;
+}
+
+.data-circle {
+    width: 100px;
 }
 
 .wide-card-container-light {
@@ -242,18 +245,38 @@ nav {
     /* margin-top: 150px; */
     /* color: white; */
 
-    margin: 75px;
+    margin-top: 75px;
 
-    width: 1000px;
+    /* width: 1000px; */
     /* text-align: center; */
 
     background-color: white;
     border: 1px solid black;
 }
 
+#color-palette {
+    width: 100%;
+}
+
+#js-final-logo {
+    width: 75%;
+}
+
+.js-final-icon {
+    width: 90%;
+}
+
+.js-asset {
+    height: 100%;
+}
+
+#js-ideation {
+    width: 100%;
+}
+
 .wide-card-container h2 {
     padding: 15px;
-    width: 365px;
+    width: 75%;
     margin: 0 auto; /* Add this line to center horizontally */
     font-family: "yuji-boku", sans-serif;
     font-weight: 400;
@@ -270,7 +293,7 @@ nav {
 
 .wide-card-container-light h2 {
     padding: 15px;
-    width: 365px;
+    width: 75%;
     margin: 0 auto; /* Add this line to center horizontally */
     font-family: "yuji-boku", sans-serif;
     font-weight: 400;
@@ -451,7 +474,7 @@ h1 {
     .introduction {
         margin-top: 50px;
         margin-bottom: 50px;
-        width: 50%;
+        width: 75%;
         /* background-color: #10767C; */
     }
 
@@ -483,6 +506,14 @@ h1 {
 
         margin-bottom: 50px;
     }
+
+    .img-shadow {
+        box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.1);
+    }
+
+    .row-gap {
+        margin-bottom: 20px; /* Adjust the value to your preference */
+      }
 
   /* URBAN SEEDS */
   #icons-1 {
@@ -672,6 +703,7 @@ table {
 /* #mockup-container {
    background-color: #10767C;
 } */
+
 
 #mockup-container img {
     height: 400px;
@@ -865,29 +897,50 @@ table {
 
     #hi-fi-screens img {
         box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        width: 100%;
+        margin-top: 10px;
     }
 
     /* MEDIA QUERIES */
     /* Video */
     /* We want a standard video size and standard video size breakpoints */
     /* At ≥768px */
-    @media (max-width: 992px) {
-        video {
-            width: 500px;
-        }
-
-        #gap-slide-template img {
-            width: 500px;
-        } 
-
-        .right-paragraph {
-            margin-left: 0;
-            padding-top: 50px;
-        }
-
-        .left-paragraph {
-            margin-right: 0;
+    @media (max-width: 500px) {
+        .introduction h1 {
+            font-size: 25px;
             padding-bottom: 50px;
+        }
+
+        .introduction p {
+            font-size: 12px;
+        }
+
+        .data-circle {
+            width: 50px;
+        }
+
+        #color-palette {
+            width: 75%;
+        }
+        
+        #js-final-logo {
+            width: 50%;
+        }
+        
+        .js-final-icon {
+            width: 50%;
+        }
+        
+        .js-asset {
+            height: 60%;
+        }
+        
+        #js-ideation {
+            width: 75%;
+        }
+
+        #js-asset-row {
+            width: 75%;
         }
     }
 
@@ -902,6 +955,10 @@ table {
             margin: 10px;
         }
         
+        .data-circle {
+            width: 75px;
+        }
+
         .floating-icon {
             position: absolute;
             /* z-index: 9999; */
@@ -940,6 +997,15 @@ table {
             transform: scale(0.75);
             /* transform: translateX(-100); */
 
+        }
+
+        .introduction h1 {
+            font-size: 25px;
+            padding-bottom: 50px;
+        }
+
+        .introduction p {
+            font-size: 20px;
         }
 
         #card-container {
