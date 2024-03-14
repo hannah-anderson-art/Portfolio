@@ -424,6 +424,10 @@ h1 {
 
   }
 
+  .skills-icon {
+    height: 30px;
+  }
+
   #skill-icons {
     margin-left: 346px;
     margin-right: 346px;
@@ -536,14 +540,6 @@ h1 {
   #survey-items li {
     margin-bottom: 15px;
   }
-
-/* #data-group-1 {
-    background-color: pink;
-} */
-
-/* #data-group-2 {
-    background-color: red;
-} */
 
 #data-container h2 {
     font-weight: 700;
@@ -713,9 +709,12 @@ table {
 }
 
 .scroll-box {
-    width: 600px; /* Custom width */
-    height: 427px; /* Custom height */
-    overflow: auto; /* Add scroll bars if needed */
+    width: auto; /* Custom width */
+    height: auto; /* Custom height */
+
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
     /* border: 1px solid #000; */
   }  
 
@@ -903,6 +902,14 @@ table {
             padding-bottom: 50px;
         }
 
+        .data-card h3 {
+            font-size: 20px;
+        }
+          
+        .skills-icon {
+            height: 20px;
+          }
+
         .gap-badge {
             width: 75%;
         }
@@ -1072,4 +1079,13 @@ table {
             font-size: 16px;
             margin: 0;
         }
+    }
+
+    @media (max-width: 1399px) {
+        .scroll-box {
+            width: 449px; /* Custom width */
+            height: 320px; /* Custom height */
+            overflow: auto; /* Add scroll bars if needed */
+            /* border: 1px solid #000; */
+          } 
     }
