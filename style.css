@@ -692,10 +692,10 @@ table {
    background-color: #10767C;
 } */
 
-
+/* 
 #mockup-container img {
     height: 400px;
-}
+} */
 
 #website-container {
     padding-bottom: 50px;
@@ -709,13 +709,9 @@ table {
 }
 
 .scroll-box {
-    width: auto; /* Custom width */
-    height: auto; /* Custom height */
-
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    /* border: 1px solid #000; */
+    width: 600px; /* Custom width */
+    height: 427px; /* Custom height */
+    overflow: auto; /* Add scroll bars if needed */
   }  
 
 .brandbook {
@@ -945,6 +941,10 @@ table {
         #js-asset-row {
             width: 75%;
         }
+
+        .scroll-box {
+            height: 100px;
+        }
     }
 
     /* IPHONE */
@@ -1086,6 +1086,7 @@ table {
             width: 449px; /* Custom width */
             height: 320px; /* Custom height */
             overflow: auto; /* Add scroll bars if needed */
-            /* border: 1px solid #000; */
-          } 
+            margin: auto;
+            margin-bottom: 5px;
+          }  
     }
