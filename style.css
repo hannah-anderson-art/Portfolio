@@ -59,6 +59,10 @@ nav {
     margin-left: 50px;
 }
 
+.nav-link:hover {
+    transform: scale(1.15);
+}
+
     #logo-hover-group {
         display: flex;
         align-items: center;
@@ -176,6 +180,8 @@ nav {
     color: #aeaeae;
     font-family: "futura-pt", sans-serif;
     font-size: 15px;
+
+    padding-bottom: 50px;
 }
 
 .card-caption {
@@ -388,7 +394,7 @@ nav {
 h1 {
     color: black;
     text-decoration: none;
-    font-size: 30px;
+    font-size: 20px;
     font-family: "yuji-boku", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -525,6 +531,7 @@ h1 {
     /* background-color: aquamarine; */
     padding-bottom: 50px;
     margin: auto;
+    width: 50%;
   }
 
   #survey-items ul {
@@ -1112,4 +1119,8 @@ table {
             margin: auto;
             margin-bottom: 5px;
           }  
+
+          #survey-items {
+            width: 75%;
+          }
     }
