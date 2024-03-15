@@ -712,6 +712,7 @@ table {
     width: 600px; /* Custom width */
     height: 427px; /* Custom height */
     overflow: auto; /* Add scroll bars if needed */
+    margin: auto;
   }  
 
 .brandbook {
