@@ -943,9 +943,23 @@ table {
         }
 
         .scroll-box {
-            height: 100px;
+            width: 404px; /* Custom width */
+            height: 288px; /* Custom height */
+            overflow: auto; /* Add scroll bars if needed */
+            margin: auto;
+            margin-bottom: 5px;
         }
     }
+
+    /* @media (max-width: 375px) {
+        .scroll-box {
+            width: 50px;
+            height: 100px;
+            overflow: scroll;
+            margin: auto;
+            margin-bottom: 5px;
+        }
+    } */
 
     /* IPHONE */
     @media (max-width: 1024px) {
