@@ -258,6 +258,10 @@ input {
 
     margin-top: 75px;
 
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+
     /* width: 1000px; */
     /* text-align: center; */
 
@@ -930,6 +934,10 @@ table {
         }
 
         .wide-card-container {
+            width: 100%;
+        }
+
+        .wide-card-container-light {
             width: 100%;
         }
 
