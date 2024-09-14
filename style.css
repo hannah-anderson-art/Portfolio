@@ -38,7 +38,7 @@ nav {
   /* Adjust navbar link colors */
   .navbar-custom .navbar-nav .nav-link {
     color: black !important; /* Change color as needed */
-  }
+  }s
 
 #nav-links {
     display: flex;
@@ -256,6 +256,57 @@ input {
 .card-item:hover img {
     filter: grayscale(0%);
 }
+
+/* GRAPHIC DESIGN PHOTO GALLERY */
+.gallery-img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.grid-wrapper > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-wrapper > div > .gallery-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.grid-wrapper {
+    padding: 10px;
+    display: grid;
+    grid-gap: 2px;
+    /* grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));  */
+    /* 250px is the min width of a col; 1fr = 1 fraction of available space */
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 225px; /* the height of each row */
+    grid-auto-flow: dense;
+}
+
+.grid-wrapper .wide {
+    grid-column: span 4;
+    /* grid-row: span 3; */
+}
+
+.grid-wrapper .square {
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
+.grid-wrapper .rect {
+    grid-column: span 3;
+    grid-row: span 2;
+}
+
+/* .grid-wrapper .big {
+    grid-column: span 2;
+    grid-row: span 2;
+} */
 
 /* WIDE CARD CONTAINER */
 .wide-card-container {
