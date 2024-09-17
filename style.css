@@ -138,7 +138,7 @@ nav {
 
 #card-container {
     /* background-color: #10767C; */
-    margin-bottom: 200px;
+    margin-bottom: 25px;
     margin-top: 150px;
     color: black;
     /* width: 1200px; */
@@ -308,6 +308,47 @@ input {
     grid-row: span 2;
 } */
 
+.button-1 {
+    /* background-color: #10767C; */
+
+    /* text-decoration: none; */
+    outline: none;
+    padding: 12px;
+
+    font-family: "futura-pt", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+    font-size: 20px;
+}
+
+.type-text {
+
+    display: inline-block;
+
+    border-right: 2px solid;
+    line-height: 0.05;
+
+    color: #10767C;
+
+    width: 16.5ch;
+    white-space: nowrap;
+    overflow: hidden;
+    animation:
+        typing 2s steps(19, end),
+        cursor .4s step-end infinite alternate;
+}
+
+/* Cursor blinkg */
+@keyframes cursor {
+    50% { border-color: transparent }
+}
+
+/* typing effect */
+@keyframes typing {
+     from { width: 0 }
+}
+
 /* WIDE CARD CONTAINER */
 .wide-card-container {
     /* margin-bottom: 200px; */
@@ -451,7 +492,7 @@ input {
 
 #footer {
     /* background-color: #10767C; */
-    color: gray;
+    color: rgb(180, 180, 180);
     text-align: center;
 
     font-family: "futura-pt", sans-serif;
