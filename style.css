@@ -61,13 +61,12 @@ nav {
 
 .nav-link:hover {
     transform: scale(1.15);
+    font-weight: 800;
 }
 
     #logo-hover-group {
         display: flex;
         align-items: center;
-        /* background-color: aliceblue; */
-        color: black;
     }
 
     .expanding-box {
